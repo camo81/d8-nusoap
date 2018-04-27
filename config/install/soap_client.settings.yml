@@ -1,0 +1,6 @@
+soap_client:
+  wsdl: 'http://some.url'
+  username: 'someUserName'
+  password: 'somePassword'
+  j2eeuser: 'someJ2eeUser'
+  j2eepassword: 'someJ2eePassword'

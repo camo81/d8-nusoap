@@ -1,0 +1,25 @@
+<?php
+
+
+/**
+ * Implements hook_theme().
+ */
+function soap_client_theme($existing, $type, $theme, $path) {
+  $variables = array(
+    'soap_client' => array(
+      'variables' => array(
+        'source_text' => NULL,
+      ),
+      'template' => 'soap_client',
+    ),
+  );
+  return $variables;
+}
+
+function soap_client_preprocess(&$variables, $hook)
+{
+  $module_handler = Drupal::service('module_handler');
+  $path = $module_handler->getModule('soap_client')->getPath();
+
+  $variables['module_path'] = $path;
+}

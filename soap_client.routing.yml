@@ -1,0 +1,27 @@
+soap_client.content:
+  path: '/soap_client'
+  defaults:
+    _controller: '\Drupal\soap_client\Controller\soapClientController::content'
+    _title: 'Soap Client'
+  requirements:
+    _permission: 'access content'
+
+soap_client.alboPretorio:
+  path: '/albo_pretorio/{anno}/{numeroProtocollo}'
+  defaults:
+    #_controller: '\Drupal\soap_client\Controller\soapClientController::listaProvince'
+    _form: '\Drupal\soap_client\Form\FilterForm'
+    _title: 'Soap Client Albo Pretorio'
+    anno: 0
+    numeroProtocollo: 0
+  requirements:
+    _permission: 'access content'
+
+soap_client.config:
+  path: '/admin/config/soapClient/config'
+  defaults:
+    _form: '\Drupal\soap_client\Form\soapClientConfigForm'
+    _title: 'soap_client Configuration'
+  requirements:
+    _permission: 'administer site configuration'
+

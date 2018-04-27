@@ -1,0 +1,13 @@
+soap_client.admin:
+  title: 'Go to soap_client'
+  description: 'main page of soap_client module'
+  parent: system.admin_config_development
+  route_name: soap_client.content
+  weight: 100
+
+soap_client.config:
+  title: 'Config soap_client'
+  description: 'config page for soap_client module'
+  parent: system.admin_config_development
+  route_name: soap_client.config
+  weight: 100

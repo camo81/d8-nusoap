@@ -1,0 +1,6 @@
+name: soap_client Module
+description: Creates a page showing a soap resource.
+package: Custom
+
+type: module
+core: 8.x
